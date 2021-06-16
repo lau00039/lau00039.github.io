@@ -1,0 +1,314 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ================== MY CSS STYLE ================== */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #F7F7FF;
+	color: #333131;
+	line-height: 1.2;
+}
+
+/* logo stays the same size for all screen sizes */
+.logo {
+	margin-top: 8px;
+	margin-bottom: 16px;
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 24px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+/* add inline-block to create a form */
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #F4F4F5;
+	font-size: 16px;
+	color: #9b9b9b;
+}
+
+.grid-item:nth-child(1) {
+	margin-right: 35px;
+	margin-left: 35px;
+}
+
+.scooter {
+	width: 289px;
+	height: 211px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* styling for the form */
+main .grid-item {
+	border-radius: 30px;
+    background-color: #fff;
+    padding: 25px;
+	box-shadow: 5px 5px 30px grey;
+	margin-top: 15px;
+	margin-right: 35px;
+    margin-bottom: 30px;
+	margin-left: 35px;
+}
+
+/* position the button to align with the text */
+button {
+	width: 25px;
+	height: 25px;
+	color:#fff;
+	border-radius: 5px;
+	margin: 5px;
+	position: relative;
+	top: -5px;
+}
+
+#submit {
+	background-color: #57EEAB;
+	font-size: 24px;
+	font-weight: bold;
+	color: #333131;
+}
+
+/* add display:inline to get rid of the block */
+form div {
+	font-size: 14px;
+	color: #FF8480;
+	display: inline;
+}
+
+.apply {
+	color: #333131;
+}
+
+footer {
+	background-color: #FFFD8C;
+	padding: 22px 36px 0px 36px;
+	margin-top: 50px;
+}
+
+footer h3 {
+	font-size: 18px;
+	font-weight: bold;
+	width: 80%;
+	margin-bottom: 10px;
+}
+
+h4 {
+	padding-right: 5px;
+}
+
+footer input {
+	border: 1px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	background-color: #F7F7FF;
+	font-size: 16px;
+	height: 40px;
+}
+
+#hours {
+	width: 68px;
+	padding: 0px;
+	text-align: center;
+	margin-right: 2px;
+}
+
+#city {
+	width: 224px;
+	padding-left: 10px;
+}
+
+#calculate {
+	background-color:#FF8480;
+	font-size: 24px;
+	font-weight: bold;
+	color: #F7F7FF;
+	text-align: center;
+	width: 302px;
+}
+
+/* add flex to distribute the bottom icons, sets height so they can shift to the center */
+.container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 70px;
+}
+ /* facebook icon has round border */
+.facebook {
+	border-radius: 50%;
+}
+
+/* ================== ADDING MEDIA QUERY for TABLET version ================== */
+
+/* layout for screen size from 768px to 1919px */
+
+@media screen and (min-width: 768px) {
+
+	body {
+		width: 604px;
+		padding: 0 82px;
+	}
+
+	h1 {
+		font-size: 80px;
+		margin-right: 60px;
+	}	
+
+/* center the background image */
+	.scooter {
+		width: 420px;
+		height: 307px;
+		margin-left: auto;
+		margin-right: auto ;
+	}
+	
+	.grid-item h4 {
+		font-size: 30px;
+	}
+
+	form input {
+		font-size: 18px;
+	}
+	
+	#submit {
+		 font-size: 32px;
+	}
+
+	form div {
+		font-size: 17px;
+	}
+	 .apply {
+		margin-left: 20px;
+	}
+
+/* set footer to a different width and height for tablet */
+	.grid-container footer {
+		width: 768px;
+		height: 200px;
+	}
+
+	#calculate {
+		width: 200px;
+	}
+
+	.container {
+		width: 260px;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+/* move all bottom icons to the center by adding paddings on left and right */
+	.facebook, .instagram, .linkedin, .twitter {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* ================== ADDING MEDIA QUERY for DESKTOP version ================== */
+
+/* layout for screen size from 1920px or above */
+
+@media screen and (min-width: 1920px) {
+
+	.grid-item:nth-child(1) {
+		width: 536px;
+	}
+
+	.grid-item:nth-child(2) {
+		width: 535px;
+		height: 590px;
+		padding-bottom: none;
+		margin-bottom: none;
+	}
+
+	.scooter img {
+		width: 820px;
+		height: 600px;
+		margin-left: 500px;
+    }
+
+/* set a fixed height for the footer */
+	footer {
+		width: 1920px;
+		height: 180px;
+	}
+/* use flex-end to shift icons to the right bottom */
+	footer .container {
+		width: 1920px;
+		justify-content: flex-end;
+	}
+}

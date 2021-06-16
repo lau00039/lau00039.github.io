@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"> <!-- set logo width to 115 for all screen sizes -->
+                    <img src="images/logo.png" alt="D-logo"  width="115">
+            </div> <!-- end logo -->
+        </nav>
+            <div class="grid-container"> <!-- set grid-container for desktop version -->
+                <div class="grid-item">
+                    <h1>Want to be your own boss?</h1>
+                        <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+                </div> <!-- end grid-item -->    
+            </div> <!-- grid-container-->         
+    </header>   
+
+    <div class="scooter"><img src="images/scooter.svg" alt="scooter"></div> <!-- this is the background image --> 
+
+    <main>
+                <div class="grid-item">
+                    <h2>Apply Now</h2>
+                        <h4>Enter your info below.</h4>
+                            <form>
+                                <input type="text" id="first-name" name="firstname" placeholder="First name">
+                                <input type="text" id="last-name" name="lastname" placeholder="Last name">
+                                <input type="number" id="phone-number" name="phonenumber" placeholder="Phone number">
+                                <input type="email" id="email" name="email" placeholder="Email Address">
+                        
+                                <button><i class="far fa-square"></i></button> I agree to dash terms
+                                <input type="submit" id="submit" value="DRIVE WITH US">
+                                <div class="apply">Applied already?</div> <div>Check your application status here</div>
+                            </form>
+                </div> <!-- end grid-item -->
+    </main>
+                <footer> 
+                    <h3>See how much you can earn with Dash.</h3>
+                        <h4>how many hours do you want to drive with us this week?<h4>
+                            <input type="text" id="hours" name="hours" placeholder="Hours">   
+                            <input type="text" id="city" name="city" placeholder="City">   
+                            <input type="calculate" id="calculate" value="CALCULATE"> 
+                            
+                                <div class="container"> <!-- set class to each element for adjustments -->
+                                    <img class="facebook" src="images/facebook.svg" alt="facebook">
+                                    <img class="instagram" src="images/instagram.svg" alt="instagram">
+                                    <img class="twitter" src="images/twitter.svg" alt="twitter">
+                                    <img class="linkedin" src="images/linkedin.svg" alt="linkedin">
+                                </div> <!-- end container -->
+                </footer>           
+                
+</body>
+</html>

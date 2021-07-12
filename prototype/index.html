@@ -13,17 +13,17 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="grid-container">
             <div class="logo">
                 <img src="images/logo-400.png" alt="logo of Oh Dairy">
             </div>
             <div class="nav">
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Contact us</li>
+                        <li class="home">Home</li>
+                        <li class="about">About</li>
+                        <li class="menu">Menu</li>
+                        <li class="contactus">Contact us</li>
                     </ul>
                 </nav>
             </div>   
@@ -33,42 +33,46 @@
         </header>
 
         <main class="container">
-            <section class="special">
-                <h1>Daddy's Special is now on!</h1>
-                    <p>Check out our new weekly flavours</p>
-                        <img src="images/charcoal.jpg" alt="Charcoal ice cream">
-
-                <h2>We are now on Ubereats!</h2>
-            
+            <div class="grid-container grid-container-1">
+                <div class="grid-item grid-item-1">
+                    <h1>Daddy's Special is now on!</h1>
+                        <p>Check out our new weekly flavours</p>
+                </div>
+                <div class="grid-item grid-item-2">
+                    <div class="special"><img src="images/charcoal.png" alt="Charcoal ice cream"></div>
+                </div>
+                <div class="grid-item grid-item-3">
+                    <h2>We are now on Ubereats!</h2>           
                         <p>- Contactless Pick up</p>
                         <p>- New Store Hours</p>
-                 
-            </section> <!-- end section -->
+                </div>           
+            </div> <!-- end container-->
 
-            <section class="background-image">
-                <img srcset="images/background-400.jpg 400w,
-                             images/background-800.jpg 800w,
-                             images/background-1200.jpg 1200w,"
-                     src="images/background-1200.jpg"
-                     alt="White flower background">
-                    <!-- sizes="(min-width: 700px) 50vw, 100vw" -->
-            </section>
-            
-            <section class="icecream">
-                <div>
-                    <img src="images/bubblegum.jpg" alt="Bubble gum ice cream">
-                </div>
-                <div>
-                    <img src="images/popsicle.jpg" alt="Popsicle ice cream">
-                </div>
-                <div>
-                    <img src="images/cone.jpg" alt="Ice cream cones">
-                </div>
-                <div>
-                    <img src="images/chocolate.jpg" alt="Chocolate ice cream">
-                </div>
-            </section> <!-- end section-->
-        </main> <!-- end container -->
+            <div class="bg-image"> <img 
+                                    srcset="images/background-320.png 320w,
+                                            images/background-480.png 480w,
+                                            images/background-800.png 800w,
+                                            images/background-1200.png 1200w"
+                                    sizes="(min-width: 700px) 100vw"
+                                    src="images/background-1200.png"
+                                    alt="White flower background">
+            <div>
+                <h1>Best Sellers</h1>
+                    <div class="grid-container grid-container-2">
+                                <div class="grid-item grid-item-1">
+                                    <img src="images/bubblegum.png" alt="Bubble gum ice cream">
+                                </div>
+                                <div class="grid-item grid-item-2">                        
+                                    <img src="images/popsicle.png" alt="Popsicle ice cream">
+                                </div>
+                                <div class="grid-item grid-item-3">
+                                <img src="images/cone.png" alt="Ice cream cones">
+                                </div>
+                                <div class="grid-item grid-item-4">
+                                    <img src="images/chocolate.png" alt="Chocolate ice cream">
+                                </div>
+                    </div> <!-- end div-->
+        </main> <!-- end main container -->
 
         <footer>
             <div class="containter">
@@ -90,6 +94,6 @@
             </div> <!-- end container-->
         </footer>
 
-    </div> <!-- end container -->
+    </div> <!-- end body container -->
 </body>
 </html>

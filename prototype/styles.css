@@ -2,29 +2,25 @@
     box-sizing: border-box;
 }
 
+/* set container to 90%, so contents are not touching the edges */
 .container {
     width: 90%;
     margin: auto;
 }
 
 body {
-    background-color: #EEF2F3;
-    background-position: center 400px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
-.main {
-    background-image: url("images/background-480.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
+    background-color:#C0CCCC;
 }
 
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* set main.container to be 100%, so the bg-image fills up the entire width */
+main.container {
+    width: 100%;
 }
 
 h1 {
@@ -70,10 +66,11 @@ nav ul li {
 
 .container header {
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
     align-items: center;
 }
 
+/* all nav elements are centered, except for the cart icon */
 .cart {
     align-self: flex-start;
     padding-top: 20px;
@@ -83,13 +80,15 @@ nav ul li {
     width: 146px;
     height: 150px;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px #b0b8b8;
     margin: auto;
 }
 
-.grid-item img{
+.grid-item img {
     width: 146px;
     height: 146px;
     border-radius: 50%;
+    box-shadow: 5px 5px 5px #b0b8b8;
     margin: auto;
     margin-bottom: 30px;
 }
@@ -110,7 +109,7 @@ nav ul li {
     margin-bottom: 40px;
 }
 
-.social-links img{
+.social-links img {
     width: 15px;
     height: 15px;
 }
@@ -119,13 +118,6 @@ nav ul li {
     .container {
         width: 650px;
         width: 90%;
-    }
-
-    .main {
-        background-image: url("images/background-800.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
     }
 
     .logo {
@@ -139,23 +131,34 @@ nav ul li {
 
     h2, p {
         font-size: 24px;
-    } 
+    }
+
+    /* set a margin-left on the cart icon, to center the nav */
+    .cart {
+        margin-left: 50px;
+    }
 
     .grid-item img{
         width: 296px;
         height: 296px;
     }
 
+    /* set a smaller image size for the weekly flavour */
+    div.special img {
+        width: 140px;
+        height: 148px;
+    }
+
     .grid-container-2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "bbgum pop"
+        grid-template-areas:
+        "sandwich pop"
         "cone choco";
     }
 
     .grid-item-1 {
-        grid-area: bbgum;
+        grid-area: sandwich;
     }
 
     .grid-item-2 {
@@ -177,16 +180,32 @@ nav ul li {
         width: 90%;
     }
 
-    .main {
-        background-image: url("images/background-1200.png");
+    /* to get raid of block element and display a background image */
+    #bg-image {
+        display: none;
+    }
+
+    /* display background image */
+    body {
+        background-image: url("images/background-1920.png");
+        background-color: #C0CCCC;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100%;
     }
 
+    body .container {
+        width: 90%;
+    }
+
+    /* target the nav bar with a 100% width, so it has a full width */
+    body .container:nth-child(1) {
+        width: 100%;
+    }
+    
     .logo {
-        width: 140px;
-        height: 139px;
+        width: 122px;
+        height: 121px;
     }
 
     nav {
@@ -200,7 +219,7 @@ nav ul li {
     h2 {
         font-size: 42px;
     }
-    
+
     p {
         font-size: 40px;
     }
@@ -212,34 +231,32 @@ nav ul li {
     .cart, .social-links img {
         width: 36px;
         height: 36px;
+        margin-top: 20px;
+    }
+
+    .best-seller {
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 
     div.container header.grid-container {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "home home about about logo logo logo logo menu menu contact cart";
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas:
+        "logo home home home home cart";
     }
 
     .logo {
         grid-area: logo;
     }
 
-    .about {
-        grid-area: about;
+    li.home, li.about, li.menu, li.contactus {
+        grid-area: home;
     }
 
-    .menu {
-        grid-area: menu;
-    }
-
-    .contact {
-        grid-area: contact;
-    }
-
-    .cart {
+    .cart img {
         grid-area: cart;
-    } 
+    }
 
     header.grid-container {
         display: block;
@@ -248,32 +265,23 @@ nav ul li {
         height: 136px;
     }
 
+    div.logo img {
+        margin-left: 85px;
+    }
+
     .nav nav ul {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
     }
 
-    nav ul li {
-        display: flex;
-        justify-content: space-evenly;
-        align-content: center;
-    }
-
-    header.grid-container .logo img {
-        float: right;
-    }
-    
-    .grid-item img {
+    .grid-container-2 .grid-item img {
         width: 398px;
         height: auto;
     }
 
-    .grid-container-2 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: 
-        "bbgum pop cone choco";
-        grid-gap: 16px;
+    .grid-item-2 .special img {
+        width: 260px;
+        height: auto;
     }
 
     .nav nav ul {
@@ -281,8 +289,16 @@ nav ul li {
         justify-content: space-evenly;
     }
 
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "sandwich pop cone choco";
+        grid-gap: 16px;
+    }
+
     .grid-item-1 {
-        grid-area: bbgum;
+        grid-area: sandwich;
     }
 
     .grid-item-2 {
@@ -297,27 +313,28 @@ nav ul li {
         grid-area: choco;
     }
 
-    .grid-container-1 {
+    div.grid-container.grid-container-1 {
         display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: 
-        "charc charc dad dad dad dad dad . uber uber uber uber";
-        display: flex;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas:
+        "charc dad dad uber uber";
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
-    .grid-container-1.grid-item-1 {
+    .grid-container-1 .grid-item.grid-item-1 {
         grid-area: dad;
         justify-content: center;
         align-self: flex-start;
     }
 
-    .grid-container-1.grid-item-2 {
+    .grid-container-1 .grid-item.grid-item-2 {
         grid-area: charc;
         justify-content: center;
         align-self: flex-start;
     }
 
-    .grid-container-1.grid-item-3 {
+    .grid-container-1 .grid-item.grid-item-3 {
         grid-area: uber;
         justify-content: center;
         align-self: flex-start;
@@ -325,27 +342,26 @@ nav ul li {
 
     footer div.contact {
         display: flex;
-        justify-content: center;   
+        justify-content: flex-end;
+        margin-right: 50px;
     }
 
     footer div.contact p {
         margin-right: 50px;
-        margin-left: 50px;  
+        margin-left: 50px;
     }
 
     div.social-links {
         display: flex;
-        justify-content: flex-end;   
+        justify-content: flex-end;
     }
 
     div.social-links img {
         margin-left: 25px;
         margin-right: 25px;
-    }        
+    }
 
     div.social-links a:nth-child(4){
         margin-right: 80px;
     }
-    
-
 }

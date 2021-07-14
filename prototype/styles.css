@@ -64,6 +64,15 @@ nav ul li {
     padding: 20px 0 0 0;
 }
 
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: antiquewhite;
+}
+
 .container header {
     display: flex;
     justify-content: space-between;
@@ -93,9 +102,13 @@ nav ul li {
     margin-bottom: 30px;
 }
 
-.contact {
-    display: flex;
-    justify-content: space-around;
+div.contact p, body.about div.contact p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* add more space between the bottom info with the social icons */
+div.contact p:nth-child(3), body.about div.contact p:nth-child(3) {
     margin-bottom: 40px;
 }
 
@@ -114,10 +127,17 @@ nav ul li {
     height: 15px;
 }
 
+/* === set paragraph STYLES for the ABOUT PAGE- mobile version === */
+
+body.about p {
+    line-height: 1.4;
+    text-align: left;
+    margin: 0 35px 40px 35px;
+}
+
 @media (min-width: 700px) {
     .container {
         width: 650px;
-        width: 90%;
     }
 
     .logo {
@@ -138,7 +158,7 @@ nav ul li {
         margin-left: 50px;
     }
 
-    .grid-item img{
+    .grid-item img {
         width: 296px;
         height: 296px;
     }
@@ -172,12 +192,35 @@ nav ul li {
     .grid-item-3 {
         grid-area: choco;
     }
-}
 
-@media (min-width: 1280px) {
+    div.contact {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px; 
+    }
+
+    div.contact p {
+        margin-right: 20px;
+    }
+
+    div.contact p:nth-child(3) {
+        margin-right: 0px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    div.social.social-links a {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+@media (min-width: 1290px) {
     .container {
         width: 1230px;
-        width: 90%;
     }
 
     /* to get raid of block element and display a background image */
@@ -186,12 +229,11 @@ nav ul li {
     }
 
     /* display background image */
-    body {
-        background-image: url("images/background-1920.png");
-        background-color: #C0CCCC;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
+    body { 
+        background: url(images/background-1920.png);
+        display: block;
+        max-width: 100%;
+        height: auto; 
     }
 
     body .container {
@@ -214,6 +256,14 @@ nav ul li {
 
     h1 {
         font-size: 63px;
+    }
+
+    div.grid-item.grid-item-1 h1 {
+        margin-top:  0;
+    }
+
+    div.grid-item.grid-item-3 h2 {
+        margin-top:  0;
     }
 
     h2 {
@@ -324,7 +374,6 @@ nav ul li {
 
     .grid-container-1 .grid-item.grid-item-1 {
         grid-area: dad;
-        justify-content: center;
         align-self: flex-start;
     }
 
@@ -343,12 +392,12 @@ nav ul li {
     footer div.contact {
         display: flex;
         justify-content: flex-end;
-        margin-right: 50px;
+        margin-right: 100px;
     }
 
     footer div.contact p {
-        margin-right: 50px;
-        margin-left: 50px;
+        margin-right: 25px;
+        margin-left: 25px;
     }
 
     div.social-links {
@@ -361,7 +410,35 @@ nav ul li {
         margin-right: 25px;
     }
 
-    div.social-links a:nth-child(4){
+    div.social-links a:nth-child(4) {
         margin-right: 80px;
     }
-}
+
+    div.social.social-links {
+        padding-bottom: 50px;
+    }
+
+    /* === set grid STYLES for ABOUT PAGE - desktop version === */
+
+    body.about {
+        background-size: cover;
+        height: 100vh;
+    }
+
+    body.about main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 30px;
+    }
+
+    body.about div.grid-container p {
+        font-size: 24px;
+        margin: 0 0;
+    }
+
+    body.about div.grid-container {
+        width: 536px; 
+        height: auto;
+    }
+}}

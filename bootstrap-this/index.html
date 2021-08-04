@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap This!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap practices</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav pe-0 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>          
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <h1 class="display-1 text-center pt-3">Let's Talk about Bootstrap!</h1>
+                        <p class="mx-4 my-3">Bootstrap makes coding that much easier! It allows you to build a Responsive Web Site efficiently without massive CSS. We will talk about some of the main components and utilities that are mostly being used when beginning a simple web site.</p>
+                </div>
+                <div class="col-lg">
+                    <p class="display-6 d-grid gap-2 justify-content-center">To get started</p>
+                        <div class="d-grid gap-2 col-6 mx-auto"><a href="https://getbootstrap.com/" class="btn btn-info d-grip gap-2">Click Me</a>
+                        </div><!--end div-->
+                </div>
+            </div>
+        </div><!--end container-->
+            
+                    <h2 class="text-center pt-5">Bootstrap Components</h2>
+                        <div class="container my-3">
+                            <ul class="list-group list-group-flush">
+                                <div class="row mx-0">
+
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong>Alerts</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                This component allows user to provide a contextual feedback or message. It is typically used to catch users attention or to remind/alert for an important message.
+
+                                <strong>How to use?</strong>
+                                Use a class="alert". To add custom style, you may have "alert-" follows by the theme colors built inside Bootstrap, then add a role of alert for its actions.<br>
+
+                                <strong>See example</strong><i>&lt;div class="alert alert-primary" role="alert"&gt;A simple primary alert&lt;/div&gt;</i>
+                            </div><!--end div-->
+                        </div><!--end div-->
+                   
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong> Buttons</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                One of the most common component user sees on any web site. It is typically used for actions, dialogs, and more, in which increases user experience. You may also customize its style to fit with theme on the web site. 
+                                            
+                                <strong>How to use?</strong>
+                                    Use the type="button" and class="btn". To add custom style, you may have "btn-" follows by the theme colors built inside Bootstrap.<br>
+
+                                <strong>See example</strong><i>&lt;button class="btn btn-primary" type="submit">Button&lt;/button&gt;</i>
+                            </div>
+                        </div><!--end div-->
+
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong>Navbar</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                 One of the most commonly used component for responsive web site. It can be expand in different screen sizes to support its branding and navigation. It increases accessibility for users and to create a more concise web site.
+                                
+                                <strong>How to use?</strong>
+                                    Start with using a class="nav", then add "navbar-expand-{breakpoint: sm/md/lg/xl/xxl}" and a color scheme class.<br>
+    
+                                <strong>See example</strong><i>&lt;nav class="navbar navbar-expand-lg navbar-light bg-light"&gt;&lt;a class="navbar-brand" href="#">Navbar&lt;/a&gt;&lt;/nav&gt;</i>
+                            </div>
+                        </div><!--end div-->      
+                            </ul>
+                        </div><!--end container-->                      
+
+                    <h2 class="text-center pt-3">Bootstrap Utilities</h2>
+                        <div class="container my-3">
+                            <ul class="list-group list-group-flush text-center">
+                                <div class="row mx-0">
+
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong>Background</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                Add decorations and meanings to the web site. There are eleven color utilities built inside of Bootstrap.
+                                
+                                <strong>How to use?</strong>
+                                    Use a class="bg-", follows by a color scheme. If you select a dark background, make sure you change the text color as well, by using "text-"
+                                    <br>
+    
+                                <strong>See example</strong><i>&lt;div class="bg-dark text-white">bg-primary&lt;/div&gt;</i>
+                            </div>
+                        </div><!--end div-->
+
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong>Position</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                This is to position an element. It is typically used to quickly move an element from one side to another, yet it is not responsive. There are static, relative, absolute, fixed and sticky.
+
+                                <strong>How to use?</strong>
+                                Add a class="position-", follows by a position value. Then you position it by using property: top/ start/ bottom/ end.
+                                <br>
+
+                            <strong>See example</strong><i>&lt;div class="position-absolute top-0 start-0"&gt;&lt;/div&gt;</i>
+                            </div>
+                            </div><!--end div-->
+
+                    <li class="col-lg list-group-item list-group-item-secondary mx-4 my-3 btn" data-bs-toggle="collapse" href="#collapseExample" role="button"><strong>Flex</strong>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body text-md-start">
+                                To manage the layout, sizing and alignment on grid-columns. Easily to customize a responsive navigation with this utility. For more complex design, you may use your own CSS stylesheet.
+                                
+                                <strong>How to use?</strong>
+                                Use the display utility for flex: class="d-flex" OR class="d-inline-flex". Set flex-row or flex-column for the flex direction. You may also align each element with the correct utilities.
+                                <br>
+
+                            <strong>See example</strong><i>&lt;div class="d-flex flex-column align-items-start"&gt;&lt;/div&gt;</i>
+                            </div>
+                        </div><!--end div-->      
+
+                                </div>
+                            </ul>
+                        </div><!--end container-->  
+    </div><!--end div-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

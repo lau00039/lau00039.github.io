@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #801414;
+    --secondary-color: #F4F4F0;
+    --tertiary-color: #070707;
+    --primary-font: 'Saira Stencil One', Helvetica, cursive;
+    --secondary-font:'Dosis', Helvetica, sans-serif;
+    --tertiary-font: 'STIX Two Text', Georgia, serif;
+}
+
+#bg-image {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 550px;
+    margin: auto;
+    background-image: url(images/background-1200.jpg);
+    background-position: center 0px;
+    background-size: 100%;  
+}
+
+.mobile-container {
+    margin: auto;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+  }
+
+  .fa {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    color: var(--primary-color);
+  }
+
+  #mylinks {
+      text-align: right;
+      padding-top: 0px;
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.mobile-container img {
+    width: 143px;
+    height: 162px;
+}
+
+.nav {
+    display: none;
+}
+
+h1 {
+    font-family: var(--primary-font);
+    font-size: 27px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 0px;
+}
+
+main, footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+}
+
+div.hire, div.resume {
+    margin: auto;
+    text-align: center;
+}
+
+input#btn-hire, input#btn-resume {
+    width: 298px;
+    height: 29px;
+    color: var(--primary-color);
+    font-family: var(--tertiary-font);
+    border-radius: 5px 5px;
+    border-style: none;
+}
+input#btn-hire {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input#btn-resume {
+    margin-bottom: 40px;
+}
+
+.social-links img {
+    width: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.copyright {
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+@media (min-width: 575px) {
+    div.container {
+        width: 100%;
+        height: 1024px;
+        background-image: url(images/background-1200.jpg);
+        background-repeat: no-repeat;
+    }
+
+    body {
+        background-color: #1F1F1E;
+    }
+
+    h1 {
+        font-size: 46px;
+    }
+
+    .topnav img {
+        width: 183px;
+        height: 206px;
+    }
+
+    input#btn-hire, input#btn-resume {
+        width: 296px;
+        height: 40px;
+    }
+
+
+
+    footer div.social.social-links img {
+        display: flex;
+        flex-direction: row;
+    
+    }
+ 
+
+
+
+
+
+
+}
+    
+
+
+
+
+

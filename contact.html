@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="styles.css">
     <title>Web-Portfolio-christine-lau</title>
 </head>
-<body>
+<body class="contact">
 
     <div id="container">
         <div class="overlay-color"></div>
-            <header> 
+            <header>
                 <nav>
                     <ul class="nav">
                         <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
@@ -25,20 +25,8 @@
                         <li class="about"><a href="about.html">ABOUT ME</a></li>
                         <li class="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
                         <li class="contact"><a href="contact.html">CONTACT</a></li>
-                    </ul>    
-                </nav>  
-
-                <div class="bg-image"> 
-                    <img 
-                        srcset="images/background-320.jpg 320w,
-                                images/background-480.jpg 480w,
-                                images/background-800.jpg 800w,
-                                images/background-1200.jpg 1200w,
-                                images/background-1920.jpg 1920w,"
-                        sizes="(min-width: 700px) 100vw"
-                        src="images/background-1200.jpg"
-                        alt="Photo of camera">
-                </div> <!-- end bg-image -->
+                    </ul>   
+                </nav> 
 
                 <div class="grid-container container-nav">
                     <div class="mobile-container">
@@ -46,7 +34,7 @@
                             <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
                             <div id="mylinks">
                             <a href="index.html">HOME</a>
-                            <a href="about.html">ABOUT ME</a>
+                            <a href="about.html">ABOUT</a>
                             <a href="portfolio.html">PORTFOLIO</a>
                             <a href="contact.html">CONTACT</a>
                             </div>
@@ -58,15 +46,34 @@
                 </div> <!-- end grid-container-nav -->
             </header> <!-- end header --> 
 
-    <div class="grid-container container-content">
-        <h1 class="intro">HELLO, I AM CHRISTINE<br>A BRANDING DESIGNER</h1>
+        <div class="grid-container container-contact">
 
-        <main id="myBtn" class="grid-container container-btn">      
-            <input class="hire" type="submit" id="btn-hire" onclick="window.location.href='contact.html'" value="Hire Me">
+            <div class="image-contact"> 
+                <img src="images/contact.jpeg" alt="photo of office">
+            </div> <!-- end image -->
 
-            <input class="resume" type="submit" id="btn-resume" onclick="window.location.href='images/christine_lau_resume.pdf'" value="My Resume">
-        </main> <!-- end main-->
-    </div> <!-- end container-content-->
+            <div class="contact-form">
+                <h1>CONTACT</h1>
+                    <div class="container">
+                        <form>
+                          <label for="name">NAME</label><br>
+                          <input type="text" id="name" name="name" placeholder="Required Field"><br>
+                      
+                          <label for="email">EMAIL ADDRESS</label><br>
+                          <input type="text" id="email" name="email" placeholder="Required Field"><br>
+                      
+                          <label for="phone">PHONE</label><br>
+                          <input type="number" id="phone" name="phone" placeholder="Required Field"><br>
+                      
+                          <label for="message">MESSAGE</label><br>
+                          <textarea id="message" name="message" placeholder="Required Field" style="height:200px"></textarea><br>
+
+                          <input id="submit" type="submit" value="submit">
+                      
+                        </form>
+                    </div>       
+            </div>
+        </div> <!-- end grid-container -->
 
     <footer class="grid-container container-social">
         <div class="social social-links">                   
@@ -77,8 +84,8 @@
             <a class="insta" href="https://www.instagram.com/" target="_blank"><img src="images/instagram_icon.svg" alt="Link to Instagram"></a>
         </div>
 
-        <div class="copyright">
-            <p>Copyright &copy; 2021 Imdesign.</p>
+        <div class="copyright"></div>
+            <p class="copyright">Copyright &copy; 2021 Imdesign.</p>
         </div>
     </footer> <!-- end container-social -->
 
@@ -88,7 +95,7 @@
       let y = document.getElementById("myBtn");
       if (x.style.display === "block") {
         x.style.display = "none";
-        y.style.marginTop = "270px";
+        y.style.marginTop = "280px";
       } else {
         x.style.display = "block";
         y.style.marginTop = "80px";

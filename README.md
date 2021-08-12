@@ -21,6 +21,7 @@ I was facing challenges from going from mobile home screen to tablet home screen
 
 Took me many tries to figure out how to add an overlay background on top of the background image and have the all contents above it. I needed to add a position value and set a z-index: 1 property.
 
+When I tried to apply a border radius on my image, it became an oval shape, if I tried to set an equal width and height to it, it stretched and became distorted. So I had to drop my original image to https://croppola.com/ and make it a square image, so that I can get a perfect circle image from it.
 
 
     /* .grid-container.container-content {

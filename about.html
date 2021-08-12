@@ -14,42 +14,55 @@
     <title>Web-Portfolio-christine-lau</title>
 </head>
 <body class="about">
-    <div class="container">
-        <header class="grid-container">
 
-            <div class="grid-container-nav">
-                <div class="mobile-container">
-                    <div class="topnav">
+    <div id="container">
+            <header>
+                <nav>
+                    <ul class="nav">
                         <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
-                        <div id="mylinks">
-                        <a href="index.html">HOME</a>
-                        <a href="about.html">ABOUT</a>
-                        <a href="#portfolio.html">PORTFOLIO</a>
-                        <a href="#contact.html">CONTACT</a>
+                        <li class="home"><a href="index.html">HOME</a></li>
+                        <li class="about"><a href="about.html">ABOUT ME</a></li>
+                        <li class="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+                        <li class="contact"><a href="contact.html">CONTACT</a></li>
+                    </ul>   
+                </nav> 
+
+                <div class="grid-container container-nav">
+                    <div class="mobile-container">
+                        <div class="topnav">
+                            <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
+                            <div id="mylinks">
+                            <a href="index.html">HOME</a>
+                            <a href="about.html">ABOUT</a>
+                            <a href="#portfolio.html">PORTFOLIO</a>
+                            <a href="#contact.html">CONTACT</a>
+                            </div>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                            </a>
                         </div>
-                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                        </a>
-                    </div>
-                </div>
-            </div> <!-- end grid-container-nav -->
-        </header> <!-- end header -->  
+                    </div> <!-- end mobile-container -->
+                </div> <!-- end grid-container-nav -->
+            </header> <!-- end header --> 
 
-            <main class="grid-container">
-                <div class="background">
-                    <h1>MY BACKGROUND</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis explicabo provident pariatur accusamus error consectetur architecto, porro id expedita nemo illo earum quod molestiae nam. Dicta error accusantium veniam.</p>
-                </div>
+        <div class="grid-container">
+            <div class="background">
 
-                <div class="passion">
-                    <h1>MY PASSION</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus debitis explicabo provident pariatur accusamus error consectetur architecto, porro id expedita nemo illo earum quod molestiae nam. Dicta error accusantium veniam.</p>
-                </div>
-            </main> <!-- end main -->
-           
-    </div> <!-- end container -->
+                <img src="images/about.jpg" alt="photo of me">
+                
+                <h2>MY BACKGROUND</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum. Impedit voluptates expedita deserunt ut. Aut quisquam explicabo corrupti nostrum, qui corporis deserunt praesentium distinctio illum. Perferendis soluta placeat minus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum. Impedit voluptates expedita deserunt ut. Aut quisquam explicabo corrupti nostrum, qui corporis deserunt praesentium distinctio illum. Perferendis soluta placeat minus
+                    </p>
 
-    <footer>
+                <h2>MY BACKGROUND</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum. Impedit voluptates expedita deserunt ut. Aut quisquam explicabo corrupti nostrum, qui corporis deserunt praesentium distinctio illum. Perferendis soluta placeat minus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, illum. Impedit voluptates expedita deserunt ut. Aut quisquam explicabo corrupti nostrum, qui corporis deserunt praesentium distinctio illum. Perferendis soluta placeat minus
+                    </p>
+            </div>
+        </div> <!-- end grid-container -->
+
+    <footer class="grid-container container-social">
         <div class="social social-links">                   
             <a class="linkedin" href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon.svg" alt="Link to Linkedin"></a>
                
@@ -61,18 +74,22 @@
         <div class="copyright">
             <p>Copyright &copy; 2021 Imdesign.</p>
         </div>
-    </footer>
+    </footer> <!-- end container-social -->
 
 <script>
     function myFunction() {
       var x = document.getElementById("mylinks");
+      let y = document.getElementById("myBtn");
       if (x.style.display === "block") {
         x.style.display = "none";
+        y.style.marginTop = "280px";
       } else {
         x.style.display = "block";
+        y.style.marginTop = "80px";
       }
     }
 </script>
    
+</div> <!-- end container -->
 </body>
 </html>

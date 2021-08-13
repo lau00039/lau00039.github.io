@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="styles.css">
     <title>Web-Portfolio-christine-lau</title>
 </head>
-<body class="contact">
+<body class="portfolio">
     <div id="container">
+        <div class="overlay-color"></div>
             <header>
                 <nav>
                     <ul class="nav">
@@ -44,36 +45,18 @@
                 </div> <!-- end grid-container-nav -->
             </header> <!-- end header --> 
 
-        <div class="grid-container container-contact">
+        <div class="grid-container container-portfolio">
 
-            <div class="image-contact"> 
-                <img src="images/contact.jpeg" alt="photo of office">
-            </div> <!-- end image -->
-
-            <div class="contact-form">
-                <h1>CONTACT</h1>
-                    <div class="container">
-                        <form>
-                          <label for="name">NAME</label><br>
-                          <input type="text" id="name" name="name" placeholder="Required Field"><br>
-                      
-                          <label for="email">EMAIL ADDRESS</label><br>
-                          <input type="text" id="email" name="email" placeholder="Required Field"><br>
-                      
-                          <label for="phone">PHONE</label><br>
-                          <input type="number" id="phone" name="phone" placeholder="Required Field"><br>
-                      
-                          <label for="message">MESSAGE</label><br>
-                          <textarea id="message" name="message" placeholder="Required Field" style="height:200px"></textarea><br>
-
-                          <input id="submit" type="submit" value="submit">
-                      
-                        </form>
-                    </div>       
-            </div>
+            <main>
+                <ul>
+                    <li class="branding"><a href="index.html">BRANDING DESIGN</a></li>
+                    <li class="photography"><a href="about.html">PHOTOGRAPHY</a></li>
+                </ul>
+            </main> 
+                
         </div> <!-- end grid-container -->
-
-    <footer> 
+    
+    <footer>
         <div class="grid-container container-social">
 
             <div class="social social-links">                   
@@ -83,12 +66,12 @@
                 
                 <a class="insta" href="https://www.instagram.com/" target="_blank"><img src="images/instagram_icon.svg" alt="Link to Instagram"></a>
             </div>
+
             <div class="copyright">
                 <p class="copyright">Copyright &copy; 2021 Imdesign.</p>
             </div>
-
         </div>
-    </footer> <!-- end container-social -->
+    </footer> <!-- end container-social --> 
 
 <script>
     function myFunction() {
@@ -104,6 +87,6 @@
     }
 </script>
    
-</div> <!-- end container -->
+    </div> <!-- end container -->
 </body>
 </html>

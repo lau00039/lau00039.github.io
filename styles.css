@@ -13,7 +13,7 @@
 
 .overlay-color{
     width: 100%;
-    height: 550px;
+    height: 700px;
     background: black;
     opacity: 0.5;
     position: absolute;
@@ -30,7 +30,7 @@
 
 #container {
     width: 100%;
-    height: 550px;
+    height: 700px;
     background-image: url(images/background-480.jpg);
     background-position: center;
     background-size: cover; 
@@ -163,15 +163,15 @@ input#btn-resume {
     margin-bottom: 40px;
 }
 
-main.grid-container.container-btn {
-    margin-top: 280px;
-}
-
 .social-links img {
     width: 30px;
     margin: auto;
     margin-bottom: 20px;
     display: flex;
+}
+
+a.linkedin img {
+    padding-top: 50px;
 }
 
 div.copyright p {
@@ -183,9 +183,15 @@ div.copyright p {
     padding-top: 30px
 }
 
-footer.grid-container.container-social {
-    height: 250px;
+footer {
+    height: 300px;
+    margin-bottom: 0px;
 }
+
+footer.grid-container.container-social {
+    height: 280px;
+}
+
 
 /* ===== Styles for mobile version "About" ===== */
 
@@ -219,10 +225,10 @@ body.about .social-links img {
 body.about footer {
     margin-top: 40px;
     padding-top: 10px;
-    padding-bottom: 20px;
+    height: 100px;
 }
 
-body.about .mobile-container {
+body.about .mobile-container, body.contact .mobile-container {
     margin: auto;
     background-image: url(images/background-800.jpg);
     background-position: center;
@@ -230,7 +236,7 @@ body.about .mobile-container {
     background-size: cover;
   }
 
-body.about .overlay-color {
+  body.about .overlay-color {
     display: none;
 }
 
@@ -241,22 +247,24 @@ body.about p.copyright {
     padding-top: 30px;
 }
 
+body.about footer div.grid-container.container-social {
+    background-color: var(--primary-color);
+}
+
 /* ===== Styles for mobile version "Contact" ===== */
 
+body.contact div#container {
+    background-image: none;
+}
 
 body.contact {
     background-color: var(--secondary-color);
-}
-
-body.contact .overlay-color {
-    display: none;
 }
 
 body.contact div.image-contact {
     display: block;
     max-width: 100%;
     height: auto;
-    padding-top: 30px;
 }
 
 body.contact h1 {
@@ -322,6 +330,27 @@ body.contact p.copyright {
     padding-top: 10px;
 }
 
+/* ===== Styles for mobile version "Portfolio" ===== */
+
+body.portfolio div.grid-container.container-portfolio main {
+    background-color: transparent;
+    padding-bottom: 170px;
+}
+
+.branding, .photography {
+    list-style-type: none;
+    font-family: var(--primary-font);
+    text-decoration: none;
+    padding-top: 30px
+}
+
+.branding a, .photography a {
+    color: var(--secondary-color);
+    font-size: 28px;
+}
+
+
+
 @media (min-width: 575px) {
     div#container {
         height: 1150px;
@@ -371,6 +400,10 @@ body.contact p.copyright {
         margin: 200px 0px 20px 0px;
     }
 
+    a.linkedin img {
+        padding-top: 0px;
+    }
+
     a.linkedin, a.email, a.insta {
         padding-right: 20px;
         padding-left: 20px;
@@ -399,11 +432,12 @@ body.contact p.copyright {
         background-color: var(--primary-color);
     }
 
-    body.about footer.grid-container.container-social .social.social-links {
-        margin-top: 0px;
+    body.about div.social.social-links {
+        display: flex;
+        justify-content: center;
     }
 
-     /* ===== Styles for tablet version "Contact" ===== */
+    /* ===== Styles for tablet version "Contact" ===== */
 
      body.contact div.my-background {
          background-color: var(--secondary-color);
@@ -429,6 +463,11 @@ body.contact p.copyright {
         font-size: 24px;
     }
 
+    body.contact footer {
+        background-color: var(--primary-color);
+        height: 220px;
+    }
+
      body.contact footer.grid-container.container-social {
          background-color: var(--primary-color);
      }
@@ -437,21 +476,40 @@ body.contact p.copyright {
          margin-top: 0px;
      }
 
-     body.contact footer.grid-container.container-social img {
-         display: flex;
-         align-items: flex-start;
-     }
+     body.contact div.social.social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ===== Styles for tablet version "Portfolio" ===== */
+
+    body.portfolio div.social.social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    body.portfolio #container {
+        height: 1050px;
+    }
+
+    body.portfolio .overlay-color{
+        height: 1050px;
+    }
+
+    .branding a, .photography a {
+        font-size: 40px;
+    }
 }
     
 @media (min-width: 1280px) {
     div#container {
-        height: 1150px;
+        height: 1000px;
         background-image: url(images/background-1920.jpg);
         background-position: center;
     }
 
     .overlay-color{
-        height: 1150px;
+        height: 1000px;
     }
 
     h1 {
@@ -504,7 +562,7 @@ body.contact p.copyright {
         font-size: 28px;
         color: var(--secondary-color);
         list-style-type: none;
-        padding-right: 100px;
+        padding-right: 90px;
     }
 
     header nav ul a:hover {
@@ -514,17 +572,12 @@ body.contact p.copyright {
     header a img {
         width: 183px;
         height: 206px;
-        margin-right: 50px;
+        margin-right: 200px;
     }
 
     .social-links img {
         width: 50px;
         height: 50px;
-    }
-
-    .copyright {
-        padding-top: 0px;
-        font-size: 16px;
     }
 
     div.social.social-links {
@@ -539,11 +592,12 @@ body.contact p.copyright {
         grid-template-rows: 1fr;
         grid-template-areas: 
             "my-bg my-photo my-passion";
+        margin-top: 50px;
     }
 
     div.image-about {
         grid-area: my-photo;
-        padding-top: 60px;
+        padding-top: 50px;
     }
     
     div.my-background {
@@ -558,6 +612,7 @@ body.contact p.copyright {
     body.about h2 {
         margin-top: 20px;
         text-align: left;
+        font-size: 45px;
     }
 
     body.about div.my-passion p {
@@ -570,6 +625,16 @@ body.contact p.copyright {
     
     body.about div.my-background h2 {
         margin-left: 40px;
+    }
+    
+    body.about div.social.social-links {
+        height: 100px;
+    }
+
+    body.about div.social.social-links img {
+        height: 100px;
+        padding-top: 0px;
+        padding-bottom: 30px;
     }
 
     /* ===== Styles for desktop version "Contact" ===== */
@@ -604,17 +669,49 @@ body.contact p.copyright {
         text-align: center;
         margin-top: 50px;
         padding-left: 0px;
+        font-size: 50px;
     }
 
     body.contact p.copyright {
-        padding-bottom: 50px;
+        margin-top: 40px;
     }
 
-    body.contact footer.grid-container.container-social {
-        height: 300px;
+    body.contact div.social.social-links {
+        height: 80px;
     }
 
+    body.contact div.social.social-links img {
+        height: 100px;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
 
+    /* ===== Styles for desktop version "Portfolio" ===== */
+
+    body.portfolio .container-portfolio {
+        padding-top: 180px;
+    }
+    .container-portfolio main ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    body.portfolio main a {
+        font-size: 50px;
+    }
+
+    body.portfolio div#container {
+        height: 970px;
+    }
+
+    body.portfolio .overlay-color{
+        height: 970px;
+    }
 }
 
+@media (min-width: 1920px) {
+    header nav ul a {
+        padding-right: 250px;
+    }
+}
 

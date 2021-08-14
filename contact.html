@@ -15,41 +15,47 @@
 </head>
 <body class="contact">
     <div id="container">
-            <header>
-                <nav>
-                    <ul class="nav">
-                        <li><a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a></li>
-                        <li class="home"><a href="index.html">HOME</a></li>
-                        <li class="about"><a href="about.html">ABOUT ME</a></li>
-                        <li class="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
-                        <li class="contact"><a href="contact.html">CONTACT</a></li>
-                    </ul>   
-                </nav> 
+        <header>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a></li>
+                    <li class="home"><a href="index.html">HOME</a></li>
+                    <li class="about"><a href="about.html">ABOUT ME</a></li>
+                    <li class="portfolio"><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li class="contact"><a href="contact.html">CONTACT</a></li>
+                </ul>   
+            </nav> 
 
-                <div class="grid-container container-nav">
-                    <div class="mobile-container">
-                        <div class="topnav">
-                            <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
-                            <div id="mylinks">
-                            <a href="index.html">HOME</a>
-                            <a href="about.html">ABOUT</a>
-                            <a href="portfolio.html">PORTFOLIO</a>
-                            <a href="contact.html">CONTACT</a>
-                            </div>
-                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                            <i class="fa fa-bars"></i>
-                            </a>
+            <div class="grid-container container-nav">
+                <div class="mobile-container">
+                    <div class="topnav">
+                        <a href="index.html"><img src="images/logo.png" alt="logo of my brand"></a>
+                        <div id="mylinks">
+                        <a href="index.html">HOME</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="portfolio.html">PORTFOLIO</a>
+                        <a href="contact.html">CONTACT</a>
                         </div>
-                    </div> <!-- end mobile-container -->
-                </div> <!-- end grid-container-nav -->
-            </header> <!-- end header --> 
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+                </div> <!-- end mobile-container -->
+            </div> <!-- end grid-container-nav -->
+        </header> <!-- end header --> 
 
         <div class="grid-container container-contact">
-
             <div class="image-contact"> 
-                <img src="images/contact.jpeg" alt="photo of office">
-            </div> <!-- end image -->
-
+                <img 
+                    srcset="images/contact-480.jpg 480w,
+                            images/contact-720.jpg 720w,
+                            images/contact-960.jpg 960w,
+                            images/contact-1200.jpg 1200w"
+                    sizes="(min-width: 700px) 100vw"
+                    src="images/contact-1200.jpg"
+                    alt="Photo of office">
+            </div>
+            
             <div class="contact-form">
                 <h1>CONTACT</h1>
                     <div class="container">
@@ -75,7 +81,6 @@
 
     <footer> 
         <div class="grid-container container-social">
-
             <div class="social social-links">                   
                 <a class="linkedin" href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin_icon.svg" alt="Link to Linkedin"></a>
                 
@@ -86,7 +91,6 @@
             <div class="copyright">
                 <p class="copyright">Copyright &copy; 2021 Imdesign.</p>
             </div>
-
         </div>
     </footer> <!-- end container-social -->
 

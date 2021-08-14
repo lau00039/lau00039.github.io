@@ -11,7 +11,7 @@
     --tertiary-font: 'STIX Two Text', Georgia, serif;
 }
 
-.overlay-color{
+.overlay-color {
     width: 100%;
     height: 700px;
     background: black;
@@ -24,7 +24,7 @@
     display: none;
 }
 
- header nav {
+header nav {
     display: none;
 }
 
@@ -39,45 +39,45 @@
 /* ===== Responsive Nav Bar ===== */
 .mobile-container {
     margin: auto;
-  }
+}
   
-  .topnav {
+.topnav {
     overflow: hidden;
     position: relative;
-  }
+}
   
-  .topnav #myLinks {
+.topnav #myLinks {
     display: none;
-  }
-  
-  .topnav a {
+}
+
+.topnav a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 14px;
     display: block;
-  }
+}
 
-  .fa {
+.fa {
     font-size: 30px;
     padding-top: 30px;
-  }
+}
   
-  .topnav a.icon {
+.topnav a.icon {
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     color: var(--primary-color);
-  }
+}
 
-  #mylinks {
+#mylinks {
       text-align: right;
       padding-top: 0px;
-  }
+}
 
 img {
     display: block;
@@ -90,7 +90,7 @@ img {
     height: 162px;
 }
 
-/* ==================================== */
+/* ===== end Responsive Nav Bar ===== */
 
 .nav {
     display: none;
@@ -154,6 +154,7 @@ input#btn-hire, input#btn-resume {
     border-radius: 5px 5px;
     border-style: none;
 }
+
 input#btn-hire {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -191,7 +192,6 @@ footer {
 footer.grid-container.container-social {
     height: 280px;
 }
-
 
 /* ===== Styles for mobile version "About" ===== */
 
@@ -234,7 +234,7 @@ body.about .mobile-container, body.contact .mobile-container {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 
   body.about .overlay-color {
     display: none;
@@ -334,7 +334,7 @@ body.contact p.copyright {
 
 body.portfolio div.grid-container.container-portfolio main {
     background-color: transparent;
-    padding-bottom: 170px;
+    padding-bottom: 150px;
 }
 
 .branding, .photography {
@@ -349,7 +349,46 @@ body.portfolio div.grid-container.container-portfolio main {
     font-size: 28px;
 }
 
+body.portfolio div.grid-container.container-portfolio main ul li a:hover {
+    color: var(--primary-color);
+}
 
+/* ===== Styles for mobile version "Photography" ===== */
+
+body.photography img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body.photography {
+    background-color: var(--tertiary-color);
+}
+
+body.photography div#container {
+    background-image: none;
+    background-color: var(--tertiary-color);
+}
+
+body.photography .container-photography{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+body.photography h1 {
+    color: var(--primary-color);
+}
+
+body.photography .portrait {
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+body.photography .topnav a {
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 @media (min-width: 575px) {
     div#container {
@@ -357,7 +396,7 @@ body.portfolio div.grid-container.container-portfolio main {
         background-image: url(images/background-1200.jpg);
     }
 
-    .overlay-color{
+    .overlay-color {
         height: 1150px;
     }
 
@@ -489,15 +528,65 @@ body.portfolio div.grid-container.container-portfolio main {
     }
 
     body.portfolio #container {
-        height: 1050px;
+        height: 1060px;
     }
 
-    body.portfolio .overlay-color{
+    body.portfolio .overlay-color {
         height: 1050px;
     }
 
     .branding a, .photography a {
         font-size: 40px;
+    }
+
+    /* ===== Styles for tablet version "Photography" ===== */
+
+    .grid-container.container-photography {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+            "a b"
+            "c d"
+            "e f";
+            grid-gap: 20px;
+    }
+
+    .portrait.portrait-1 {
+        grid-area: a;
+    }
+    
+    .portrait.portrait-2 {
+        grid-area: b;
+    }
+    
+    .portrait.portrait-3 {
+        grid-area: c;
+    }
+    
+    .portrait.portrait-4 {
+        grid-area: d;
+    }
+
+    .portrait.portrait-5 {
+        grid-area: e;
+    } 
+
+    .portrait.portrait-6 {
+        grid-area: f;
+    }
+
+    body.photography .grid-container.container-social {
+        background-color: var(--primary-color);
+    }
+
+    body.photography div.social.social-links {
+        display: flex;
+        justify-content: center;
+    }
+
+    body.photography footer {
+        height: 234px;
     }
 }
     
@@ -508,7 +597,7 @@ body.portfolio div.grid-container.container-portfolio main {
         background-position: center;
     }
 
-    .overlay-color{
+    .overlay-color {
         height: 1000px;
     }
 
@@ -701,12 +790,55 @@ body.portfolio div.grid-container.container-portfolio main {
     }
 
     body.portfolio div#container {
-        height: 970px;
+        height: 1000px;
     }
 
     body.portfolio .overlay-color{
-        height: 970px;
+        height: 1000px;
     }
+
+    /* ===== Styles for desktop version "Photography" ===== */
+
+    body.photography h1 {
+        text-align: center;
+    }
+
+    body.photography ul li a {
+        font-size: 28px;
+    }
+
+    .grid-container.container-photography {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "a b c"
+            "d e f"
+    }
+
+    .portrait.portrait-1 {
+        grid-area: a;
+    }
+    
+    .portrait.portrait-2 {
+        grid-area: b;
+    }
+    
+    .portrait.portrait-3 {
+        grid-area: c;
+    }
+    
+    .portrait.portrait-4 {
+        grid-area: d;
+    }
+
+    .portrait.portrait-5 {
+        grid-area: e;
+    } 
+
+    .portrait.portrait-6 {
+        grid-area: f;
+    }  
 }
 
 @media (min-width: 1920px) {
